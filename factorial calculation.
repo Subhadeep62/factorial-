@@ -1,0 +1,19 @@
+def factorial(n):
+    """
+    Calculate the factorial of a given number n.
+
+    Args:
+        n (int): The number to calculate the factorial of.
+
+    Returns:
+        int: The factorial of n.
+    """
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Test the function
+num = int(input("Enter a number: "))
+result = factorial(num)
+print(f"The factorial of {num} is {result}")
